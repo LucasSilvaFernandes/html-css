@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(100, 103, 105);
+            margin: 0px;
+        }
+        main{
+            background-color: rgb(250, 249, 249);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 3px 3px black;
+        }
+        article{
+            background-color: rgb(212, 233, 252);
+        }
+        article > aside{
+            background-color: darkgray;
+        }
+        header{
+            background-color: rgba(0, 0, 0, 0.664);
+            color: white;
+            margin: 10px;
+        }
+        h1{
+            padding: 10px;
+        }
+        article > h2,p{
+            padding:  4px 2px 2px 5px;
+            text-align: justify;
+        }
+        nav{
+            background-color: blue;
+            padding: 10px;
+            box-shadow: 2px 3px 3px 0px black;
+        }
+        nav > a {
+            color: white;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .menu :hover{
+            color: crimson;
+            
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>   
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
+            <a href="#">Menu</a>
+        </nav> 
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Noticias e Tecnologias</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias Sobre o País</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellat recusandae quaerat doloremque fugiat excepturi explicabo facilis corporis eius aperiam placeat, reiciendis fugit optio consequatur ipsa eveniet aspernatur amet voluptate.</p>
+                <aside>
+                    <p>escrito por Lucas</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Lucas
+    </footer>
+    
+</body>
+</html>
